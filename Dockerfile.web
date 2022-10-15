@@ -1,7 +1,7 @@
 FROM php:fpm
 
 # Install additional packages
-RUN docker-php-ext-install pdo_mysql
+RUN docker-php-ext-install ./web/pdo_mysql
 
 # Adds the NGINX and Supervisor packages
 RUN apt-get update -y && apt-get install -y nginx supervisor
