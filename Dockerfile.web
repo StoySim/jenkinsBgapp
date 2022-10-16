@@ -5,7 +5,7 @@ FROM trafex/php-nginx
 #RUN docker-php-ext-install ./web/config.php
 
 # Adds the NGINX and Supervisor packages
-RUN apt-get update -y && apt-get install -y nginx supervisor
+#RUN apt-get update -y && apt-get install -y nginx supervisor
 
 # Removes the /etc/nginx/sites-{available,enabled} folders
 #RUN rm -rf /etc/nginx/sites-*
