@@ -1,4 +1,4 @@
-FROM php:8.0-apache
+FROM trafex/php-nginx
 RUN docker-php-ext-install pdo_mysql
 
 # Install additional packages
