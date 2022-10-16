@@ -2,7 +2,7 @@ FROM php:8.0-apache
 RUN docker-php-ext-install pdo_mysql
 
 # Install additional packages
-RUN docker-php-ext-install web/config.php
+RUN docker-php-ext-install ./web/config.php
 
 # Adds the NGINX and Supervisor packages
 RUN apt-get update -y && apt-get install -y nginx supervisor
