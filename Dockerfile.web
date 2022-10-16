@@ -19,7 +19,7 @@ RUN docker-php-ext-install web/config.php
 #ADD ./support/supervisor.conf /etc/supervisor.conf
 
 # Copies our PHP application
-ADD /var/lib/jenkins/test8/jenkinsBgapp/web /var/www/html/
+ADD /var/lib/jenkins/test9/jenkinsBgapp/web /var/www/html/
 
 # Exposes port 80
 EXPOSE 80
