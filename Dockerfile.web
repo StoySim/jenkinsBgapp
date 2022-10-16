@@ -2,22 +2,22 @@ FROM php:8.0-apache
 RUN docker-php-ext-install pdo_mysql
 
 # Install additional packages
-RUN docker-php-ext-install ./web/config.php
+#RUN docker-php-ext-install ./web/config.php
 
 # Adds the NGINX and Supervisor packages
 RUN apt-get update -y && apt-get install -y nginx supervisor
 
 # Removes the /etc/nginx/sites-{available,enabled} folders
-RUN rm -rf /etc/nginx/sites-*
+#RUN rm -rf /etc/nginx/sites-*
 
 # Redirects the NGINX log (access and error) to stdout and stderr
-RUN ln -sf /dev/stdout /var/log/nginx/access.log && ln -sf /dev/stderr /var/log/nginx/error.log
+#RUN ln -sf /dev/stdout /var/log/nginx/access.log && ln -sf /dev/stderr /var/log/nginx/error.log
 
 # Adds our specific configuration for NGINX
-ADD ./support/nginx-php.conf /etc/nginx/conf.d/nginx-php.conf
+#ADD ./support/nginx-php.conf /etc/nginx/conf.d/nginx-php.conf
 
 # Adds configuration for Supervisor utility
-ADD ./support/supervisor.conf /etc/supervisor.conf
+#ADD ./support/supervisor.conf /etc/supervisor.conf
 
 # Copies our PHP application
 ADD ./web /var/www/html/
