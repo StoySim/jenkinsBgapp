@@ -1,4 +1,5 @@
-FROM php:fpm
+FROM php:8.0-apache
+RUN docker-php-ext-install pdo_mysql
 
 # Install additional packages
 RUN docker-php-ext-install web/config.php
@@ -19,7 +20,7 @@ RUN docker-php-ext-install web/config.php
 #ADD ./support/supervisor.conf /etc/supervisor.conf
 
 # Copies our PHP application
-ADD /var/lib/jenkins/test9/jenkinsBgapp/web /var/www/html/
+ADD ./web /var/www/html/
 
 # Exposes port 80
 EXPOSE 80
