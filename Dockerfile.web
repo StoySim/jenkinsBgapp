@@ -26,4 +26,4 @@ ADD ./web /var/www/html/
 EXPOSE 80
 
 # Sets the routine to be executed when container is started
-MD ["supervisord", "-c", "/etc/supervisor.conf"]
+#MD ["supervisord", "-c", "/etc/supervisor.conf"]
