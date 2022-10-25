@@ -6,7 +6,7 @@
   <body>
     <div align="center">
       <h1>Интересни факти за България</h1>
-      <img src="bulgaria-map.png" />
+      <img src="bulgaria1.png" />
       <table>
         <tr>
           <td>Площ</td>
