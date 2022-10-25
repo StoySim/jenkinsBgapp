@@ -14,4 +14,4 @@ INSERT INTO cities (city_name, population) VALUES ('Сливен', 87322);
 INSERT INTO cities (city_name, population) VALUES ('Добрич', 85402);
 INSERT INTO cities (city_name, population) VALUES ('Шумен', 76967);
 INSERT INTO cities (city_name, population) VALUES ('с.Кичево', 1208);
-INSERT INTO cities (city_name, population) VALUES ('Всички останали Градове', 6311208);
+INSERT INTO cities (city_name, population) VALUES ('Дриги градове', 6311208);
