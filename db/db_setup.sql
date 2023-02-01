@@ -1,6 +1,6 @@
 set names 'utf8';
 create database bulgaria character set utf8 collate utf8_general_ci;
-grant all on bulgaria.* to 'web_user'@'%' identified by 'Parola1';
+grant all on bulgaria.* to 'web_user'@'%' identified by '12345';
 use bulgaria;
 create table cities (id int primary key auto_increment, city_name varchar(50), population int);
 INSERT INTO cities (city_name, population) VALUES ('Варна', 3236047);
